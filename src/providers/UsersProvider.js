@@ -7,7 +7,7 @@ export const UsersConsumer = UsersContext.Consumer;
 const UsersProvider = (props) => {
   const [users, setUsers] = useState([
     "users: Johnny",
-    "users: Mira",
+    "users: Moira",
     "users: Alexis ",
   ]);
 
