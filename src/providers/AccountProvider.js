@@ -1,11 +1,7 @@
 import React, { useState } from "react";
 
-// setup the initial context
-// {Consumer:, Provider}
 export const AccountContext = React.createContext();
 
-// create an exportable consumer that can be used
-// in other components
 export const AccountConsumer = AccountContext.Consumer;
 
 const AccountProvider = (props) => {

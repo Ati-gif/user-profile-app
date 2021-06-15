@@ -14,7 +14,7 @@ const Home = ()=> {
       <Card.Content>
               <Card.Header> <Icon color='red' name='users' /> Username: { username}
             </Card.Header>
-        <Card.Meta>MembershipLevel: { membershipLevel}</Card.Meta>
+        <Card.Meta>Membership Level: { membershipLevel}</Card.Meta>
         <Card.Meta><p>Email: { email}</p></Card.Meta>
         <Card.Description>
             {users.map( u => <p>{u}</p>)}

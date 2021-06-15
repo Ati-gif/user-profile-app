@@ -11,7 +11,7 @@ const AccountForm = () => {
   const [membershipLevel, setMembershipLevel] = useState(
     account.membershipLevel
   );
-  const handleSubmitYo = (e) => {
+  const handleSubmitRoseApothicary = (e) => {
     e.preventDefault();
     account.setUsername(username);
     account.setFirstName(first_name);
@@ -19,10 +19,13 @@ const AccountForm = () => {
     account.setEmail(email);
     account.setMembershipLevel(membershipLevel);
     console.log(username);
+    console.log(first_name)
+    console.log(last_name)
+    console.log(email)
     console.log(membershipLevel);
   };
   return (
-    <Form onSubmit={handleSubmitYo}>
+    <Form onSubmit={handleSubmitRoseApothicary}>
       <Form.Input
         label="Username"
         type="text"

@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Button } from 'semantic-ui-react'
 import { AccountConsumer } from '../providers/AccountProvider'
 
-class AccountFormClass extends React.Component {
+class AccountForm extends React.Component {
     state = {
         username: this.props.username,
         firstname: this.props.first_name,
@@ -19,11 +19,11 @@ class AccountFormClass extends React.Component {
         console.log(email)
         console.log(membershipLevel)
     }
-    handleChange = (e, {value, name}) => {
-        this.setState({[name]: value})
+    handleChange = (e, {value, name, first_name,last_name}) => {
+        this.setState({[name, first_name, last_name]: value})
             }
     render(){
-    const {username,first_name, last_name, email, membershipLevel} = this.state
+    const {username, first_name, last_name, email, membershipLevel} = this.state
     return (
         <>
         <h1>title: {this.props.title}</h1>
