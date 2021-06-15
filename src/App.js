@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import { Container } from 'semantic-ui-react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import AccountProfile from './components/AccountProfile';
+import AddUser from './components/AddUser';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Container>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/users/new' component={AddUser} />
+          <Route
+            exact
+            path='/account/profile'
+            render={() => <AccountProfile x='RoseApothicary' />}
+          />
+        </Switch>
+      </Container>
+    </>
   );
 }
 
