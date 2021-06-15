@@ -8,7 +8,7 @@ const AddUser = (props) => {
     } 
     return (
         <Form onSubmit={handleSubmit}>
-            <Button>New User</Button>
+            <Button color='orange'>New User</Button>
         </Form>
     )
 }
