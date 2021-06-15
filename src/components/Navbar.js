@@ -22,7 +22,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink to="/users/new">
                 <Menu.Item active={pathname === '/users/new'}>
-                    new
+                    New
                 </Menu.Item>
             </NavLink>
         </Menu>
